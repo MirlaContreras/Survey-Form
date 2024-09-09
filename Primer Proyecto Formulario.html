@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-es">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+		<title>Book's Challenge</title>
+	</head>
+	<body>
+
+		<div class="container">
+
+		<label for="description" class="description">
+			<h1 id="title">Book's Challenge</h1>
+			<p id="description">In the following form we collect information regarding your literary tastes and how many books you have read this year. With this information we will make a selection of books especially for you. </p>
+		</label>
+		<! --Comienzo del form-->
+		<form id="survey-form" method="POST">
+			<! --Fieldset de la Informacion personal-->
+			<fieldset class="personalInformation">
+				<legend><h2>Fill in your personal information</h2>
+				</legend>
+				<div>
+					<label for="name" class="text" id="name-label"> Your Name
+						<input type="text" name="name" id="name" required class="inputT" placeholder="Enter your name">
+					</label>
+
+					<label for="email" class="text" id="email-label" > Your Email
+						<input type="email" name="email" id="email" required class="inputT" placeholder="Enter your email">
+					</label>
+
+					<label for="number" class="text" id="number-label"> Number of books read 
+						<input type="number" name="number" min="0" max="1000" class="inputT" id="number" placeholder="Enter number of books read" >
+					</label>
+				</div>
+			</fieldset>
+
+			<! --Gustos de Lectura-->
+			
+			<fieldset>
+				
+			<div class="format">
+				
+				<h2>What format do you prefer to read in?</h2>
+					
+				<select class="preferences"  id="dropdown">
+					<option>Elige una opcion</option>
+					<option>Physical</option>
+					<option>Digital</option>
+					<option>Both</option>
+				</select>
+			</div>
+			
+			<div class="preferences">
+				<h2>Choose the literary genres of your preference</h2>
+				<label>
+					<input type="checkbox" name="Romance" value="1">Romance
+					<input type="checkbox" name="Mystery" value="2">Mystery
+					<input type="checkbox" name="Mystery" value="3">Thriller
+					<input type="checkbox" name="Fantasy" value="4">Fantasy
+					<input type="checkbox" name="Science-Fiction" value="5">Science Fiction
+					<input type="checkbox" name="Horror" value="6">Horror
+				<label class="textA">
+					<p>If you chose the other option, write the genre:</p>
+					<textarea></textarea>
+				</label>
+				</label>
+			</div>
+			<div class="promotions">
+			<p>Would you like to receive information about promotions from associated bookstores?</p>
+				<label>
+					<input type="radio" name="recommendations" checked value="1">
+					Yes
+				</label>
+				<label>
+					<input type="radio" name="recommendations" value="0">
+					Not
+				</label>
+			</div>
+			</fieldset>
+
+			<label class="submit"><input type="submit" name="submit" id="submit" ></label>
+				
+		</form>
+
+	</div>
+
+	</body>
+</html>

@@ -1,0 +1,149 @@
+
+body{
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	background-image: url("https://i.pinimg.com/736x/6f/39/0b/6f390b99ea33331ba5cbe14f91d5743f.jpg");
+	font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+}
+
+.container {
+	width: 60%;
+	padding: 40px;
+	color: white;
+	margin: 20px auto;
+	background: #0b2618;
+	opacity: 90%;
+}
+
+.description{
+	margin: auto;
+	width: 70vw;
+	font-size: 18px;
+	text-align: justify;
+	max-width: 600px;
+	min-width: 400px;
+}
+
+h1{
+ color: rgb(212, 175, 55);
+ font-size: 50px;
+ text-align: center;
+}
+
+h2{
+
+	font-size: 20px;
+	text-align: left;
+}
+
+form{
+	width: 70vw;
+	max-width: 600px;
+	min-width: 400px;
+	margin: auto;
+	border: 1px solid white;
+	padding: 10px;
+
+}
+
+fieldset{
+	border: none;
+	padding: 1px 0;
+	width: 100%;
+}
+
+label{
+	margin: 0.4rem 0;
+	display: block;
+}
+
+.preferences{
+	margin: 10px;
+}
+
+.personalInformation{
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%;
+}
+
+.inputT {
+    width: 50%;
+}
+	
+
+textarea{
+	margin-left: 20px;
+	min-height: 30px;
+	max-height: 50px;
+	max-width: 300px;
+	min-width: 100px;
+}
+
+textarea, .inputT, select{
+	background-color: rgba(120, 250, 120, 1.0);
+	border: 1px rgba(120, 250, 120, 1.0);
+
+}
+
+.promotions{
+   
+    margin-right: 20px; 
+    font-size: 18px;
+}
+
+.personalInformation, .preferences{
+	font-size: 18px;
+}
+
+
+select .preferences{
+	display: flex; 
+    justify-content: space-between;
+    width: 40%;
+
+}
+
+.submit {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+}
+
+input[type="submit"] {
+    background-color: rgba(120, 250, 120, 1.0);
+    border: none;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #0b2618;
+    font-size: 25px;
+}
+
+.personalInformation{
+	border-bottom: 3px solid rgb(202, 227, 214);
+}
+
+.format, .textA, .promotions{
+	display: flex;
+    align-items: center;
+
+}
+
+.format, #dropdown, .promotions{
+	border-bottom: 1px solid rgb(202, 227, 214);
+	width: 100%;
+	margin: auto;
+}
+
+** end of undefined **
+
